@@ -1,0 +1,105 @@
+@text-transform: uppercase;
+@font-size: 12px;
+@font-family: "Arial";
+@font-weight: bold;
+@color: #ebf4f4;
+@text-color: white;
+@float: left;
+@main-size: 570px;
+@position: absolute;
+@form-color: #ffffff;
+@bd-color: #cfdede;
+@bd-size: 0.5px;
+@text-align: center;
+@margin-top: 3px;
+@width: auto;
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+main {
+    float: @float;
+    width: @main-size;
+    height: @main-size;
+    background-color: @color;
+
+    .form {
+        position: @position;
+        top: 100px;
+        left: 125px;
+        width: 261px;
+        height: 319px;
+        background-color: @form-color;
+        border-top: @bd-size * 2 solid @bd-color;
+        border-bottom: @bd-size * 2 solid @bd-color;
+        border-right:  @bd-size solid @bd-color;
+        border-left:  @bd-size solid @bd-color;
+        padding: 0px 29px;
+        padding-top: 50px;
+
+        label {
+            float: @float;
+            width: @width;
+            font-size: @font-size;
+            margin-top: @margin-top;
+            font-family: @font-family;
+            font-weight: @font-weight;
+            color: #333333;
+        }
+
+        .star {
+            color: #00caca;
+            width: @width;
+            float: @float;
+            margin-left: @margin-top;
+            margin-top: @margin-top;
+            font-size: 10px
+        }
+        
+        .input {
+            float: @float;
+            width: 247px;
+            height: 30px;
+            background-color: #ebf4f4;
+            border: @bd-size * 2 solid @bd-color;
+            margin-top : 11px;
+            margin-bottom: 14px;
+            padding-left: @font-size;
+            font-size: @font-size;
+            font-family: @font-family;
+        }
+
+        .button {
+            background-image: linear-gradient( #00caca, #01b1b1);
+            color: @text-color;
+            width: 261px;
+            height: 45px;
+            margin-top: 20px;
+            padding-top: @margin-top;
+            border-radius: 4px;
+            text-align: @text-align;
+            text-transform: @text-transform;
+            border: none;
+            font-size: 16px;
+            font-weight: @font-weight;
+        }
+    }
+
+    .title {
+        position: @position;
+        top: 97px;
+        left: 155px;
+        width: 149px;
+        height: 19px;
+        padding-top: 7px;
+        background-color: #01b3b3;
+        color: @text-color;
+        text-align: @text-align;
+        font-size: @font-size;
+        text-transform: @text-transform;
+        font-family: @font-family;
+        font-weight: @font-weight;
+    }
+}
